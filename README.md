@@ -1,31 +1,22 @@
-# C++ app template for Epsilon
+# Langton's ant app for Epsilon
 
 This is a sample C++ app to use on a [NumWorks calculator](https://www.numworks.com).
 
-## Build the app
+[Langton's ant](https://en.wikipedia.org/wiki/Langton%27s_ant) is a two-dimensional [Turing machine](https://en.wikipedia.org/wiki/Turing_machine) with a very simple set of rules but complex emergent behavior. It was invented by [Chris Langton](https://en.wikipedia.org/wiki/Christopher_Langton) in 1986
 
-To build this sample app, you will need to install the [embedded ARM toolchain](https://developer.arm.com/Tools%20and%20Software/GNU%20Toolchain) and [Node.js](https://nodejs.org/en/). The C SDK for Epsilon apps is shipped as an npm module called [nwlink](https://www.npmjs.com/package/nwlink) that will automatically be installed at compile time.
+- At a white square, turn 90° clockwise, flip the color of the square, move forward one unit
+- At a black square, turn 90° counter-clockwise, flip the color of the square, move forward one unit
 
-```shell
-brew install numworks/tap/arm-none-eabi-gcc node # Or equivalent on your OS
-make
-```
+## controls
 
-You should now have a `target/voord.nwa` file that you can distribute! Anyone can now install it on their calculator from the [NumWorks online uploader](https://my.numworks.com/apps).
+Use `shift` to toggle to fast speed mode.
 
-## Run the app locally
+## Installation
 
-To run the app on your development machine, you can use the following command
-
-```shell
-# Now connect your NumWorks calculator to your computer using the USB cable
-make run
-```
+Download the [latest version](https://github.com/valmontechno/epsilon-langton-s-ant/releases/latest) and go to the [NumWorks website](https://my.numworks.com/apps) to install this application on your calculator.
 
 ## License
 
 This sample app is distributed under the terms of the BSD License. See [LICENSE](LICENSE) for details.
-
-## Trademarks
 
 NumWorks is a registered trademark.
