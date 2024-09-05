@@ -1,4 +1,4 @@
-NAME = hello-world
+NAME = langton-s-ant
 Q ?= @
 CC = arm-none-eabi-gcc
 CXX = arm-none-eabi-g++
